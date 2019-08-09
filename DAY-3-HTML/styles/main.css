@@ -1,0 +1,110 @@
+/* Removing unwanted left margin, mentioning custom font family and size */
+html,body{
+    margin: 0; 
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+/* Styling headings */
+h1, h2, h3, h4{
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+/* Push the images to leftside of the container */
+.img-left{
+    float: left;
+}
+
+/* Declaring width of the logo image */
+img.logo{
+    width: 100px;
+}
+
+/* Styling the header part*/
+.company-header{
+    text-align: center;
+    background-color: #006f6f;
+    color: #fafafa;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+/* Clearfix the float property */
+.company-header::after, .primary-message-container::after, .secondary-message-container::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/* Styling navigation */
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/* Make the items of the navigation horizontally */
+nav ul li{
+    display: inline-block;
+    padding: 0;
+}
+/* Removing the text-decoration, adding color and padding to navigation menu items */
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fafafa;
+    display: inline-block;
+}
+/* Change in style on hovering links */
+nav ul li a:hover{
+    background-color: #005252;
+    transition: all 2s ease;
+}
+/* Stylling the banner image. defining width, height, margin */
+img.banner{
+    width: 30%;
+    height: auto; 
+    margin: 4em 1em 1em 0;
+}
+
+/* Start primary message container after navigation */
+.primary-message-container{
+    margin-top: 120px;
+}
+
+
+.secondary-message-container{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* All the secondary article, defining width, text alignment   */
+.secondary-message-container .secondary-msg{
+    width: 31%;
+    text-align: justify;
+    margin: 0 5px;
+    vertical-align: top;
+    float: left;
+}
+
+.secondary-message-container .secondary-msg p{
+    padding: 5px 12px;
+    border-left: 2px solid #ddd;
+}
+
+.secondary-message-container .secondary-msg h3{
+    padding-left: 15px;
+}
+
+/* Defining color, padding, text alignment for footer section */
+footer{
+    padding: 10px 0;
+    text-align: center;
+    background-color: #002222;
+    color: #fafafa;
+}

@@ -1,0 +1,189 @@
+/* Removing unwanted left margin, mentioning custom font family and size */
+html,body{
+    margin: 0; 
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+/* Styling headings */
+h1, h2, h3, h4{
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.nav-heading{
+    color: #fafafa;
+    font-size: 32px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+/* Push the images to leftside of the container */
+.img-left{
+    float: left;
+}
+
+/* Declaring width of the logo image */
+img.logo{
+    width: 100px;
+}
+
+/* Styling the header part*/
+.company-header{
+    text-align: center;
+    background-color: #006f6f;
+    color: #fafafa;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Styling navigation */
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 1px dotted #005252;
+}
+/* Make the items of the navigation horizontally */
+nav ul li{
+    display: inline-block;
+    padding: 0;
+}
+/* Removing the text-decoration, adding color and padding to navigation menu items */
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fafafa;
+    display: inline-block;
+}
+/* Change in style on hovering links */
+nav ul li a:hover{
+    background-color: #005252;
+    transition: all 2s ease;
+}
+
+/* Contains the side-by-side divs (columns).
+    This should be bellow the header.
+*/
+.col-container{
+    margin-top: 120px;
+}
+
+/* In html this is the first column but visually it should be rightmost */
+.col-1{
+    width: 74%;
+    float: right;
+}
+
+/* In html this is the second column but visually it should be leftmost */
+.col-2{
+    width: 25%;
+    float: left;
+}
+
+
+/* Start primary message container after navigation */
+.primary-message-container{
+    position: relative;
+    padding-bottom: 25px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.primary-message-container .text-content{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    right: 0;
+    bottom:0;
+    width: 40%;
+    position: absolute;
+}
+
+/* Stylling the banner image. defining width, height, margin */
+img.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    bottom:0;
+}
+
+/* All the secondary articles, trending blogs as card, defining width, text alignment   */
+.card{
+    text-align: justify;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px #ddd;
+    border-radius: 5px;
+    margin: 9px 0;
+}
+
+/* Adding custom padding to h3 inside .card */
+.card h3{
+    padding-left: 15px;
+}
+
+/* The paragraphs inside the .card must have some padding to look tidy. */
+.card p{
+    padding: 5px 12px;
+}
+
+.secondary-message-container{
+    text-align: center;
+    padding-bottom: 25px;
+}
+/* The secondary-msg should be inline */
+.secondary-message-container .secondary-msg{
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+/* Pulling the 2nd article (according to html) to leftmost positon using float property. */
+.secondary-message-container .secondary-msg.post-1{
+    float: left;
+}
+
+/* The images inside articles must take the full parent size and height will be auto */
+.img-article{
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+/* Leftside contents holder section actuallly it hold trending blogs inside col-2 */
+.left-contents{
+    padding-right: 7px;
+    padding: 10px;
+}
+
+/* Default button class style */
+.btn {
+    background-color: #006f6f;
+    color: #fafafa;
+    padding: 10px 15px;
+    border: 1px solid #006f6f;
+    border-radius: 35px;
+}
+
+/* Clearfix the float property */
+.clearfix::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/* Defining color, padding, text alignment for footer section */
+footer{
+    padding: 10px 0;
+    text-align: center;
+    background-color: #002222;
+    color: #fafafa;
+}

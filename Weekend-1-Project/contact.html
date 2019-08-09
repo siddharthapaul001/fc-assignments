@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Company name to show in the title of the browser tab-->
+        <title>A company</title>
+    </head>
+    <body>
+        <!--The header section containing the company name and navigation menu-->
+        <header style="text-align: center">
+            <h1>A Laptop Shop</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="#">contact</a>
+            </nav>
+        </header>
+
+        <section>
+            <!--A section to hold Contact us form-->
+            <h2>Contact us through this website</h2>
+            <!--Contact us form-->
+            <form method="POST">
+                <label for="fullname">Name:</label>
+                <input name="fullname" type="text" id="fullname" placeholder="Enter your name here" size="92" >
+                <br>
+                <label for="email">Email:</label>
+                <input name="email" type="email" id="email" placeholder="Enter your email here" size="40" >
+                <label for="phone">Contact no:</label>
+                <input name="phone" type="text" id="phone" placeholder="Enter your phone number here" size="40">
+                <br>
+                <label for="msg">Message:</label>
+                <br>
+                <textarea name="msg" id="msg" placeholder="Enter your message here"></textarea>
+                <br>
+                <!--Button to submit the form information-->
+                <button type="submit" id="btn-submit" name="submit" value="Submit">Submit</button>
+            </form>
+        </section>
+        <!--A footer showing copyright information-->
+        <footer style="text-align: center">
+            A Laptop Shop &copy; 2019
+        </footer>
+        </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Company name to show in the title of the browser tab-->
+        <title>A Laptop shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto:300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+    <body>
+        <!--The header section containing the company name and navigation menu-->
+        <header class="clearfix">
+            <img class="img-left logo" src="images/logo.png" alt="A Laptop Shop Logo" title="A Laptop Shop Logo">
+            <div class="company-title">
+                A Laptop Shop
+            </div>
+            <nav class="clearfix">
+                <a href="#" class="mob-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section-text">
+            <!--A section to hold Contact us form-->
+            <h2>Contact us through this website</h2>
+            <!--Contact us form-->
+            <form method="POST">
+                <label for="fullname">Name:</label>
+                <input name="fullname" type="text" id="fullname" placeholder="Enter your name here" >
+                
+                <label for="email">Email:</label>
+                <input name="email" type="email" id="email" placeholder="Enter your email here" >
+                <label for="phone">Contact no:</label>
+                <input name="phone" type="text" id="phone" placeholder="Enter your phone number here">
+                
+                <label for="msg">Message:</label>
+                
+                <textarea name="msg" id="msg" placeholder="Enter your message here"></textarea>
+                
+                <!--Button to submit the form information-->
+                <button type="submit" class="btn" id="btn-submit" name="submit" value="Submit">Submit</button>
+            </form>
+        </section>
+        <!--A footer showing copyright information-->
+        <footer class="deeper center">
+            A Laptop Shop &copy; 2019
+        </footer>
+        </body>
+</html>
