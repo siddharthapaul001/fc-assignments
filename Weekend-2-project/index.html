@@ -11,10 +11,10 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-    <header>
+    <header class="clearfix">
+        <img class="img-logo" src="images/logo.png" alt="FusionCharts" title="FusionCharts">
         <nav>
-            <ul class="clearfix">
-                <li class="menu-logo"><img class="img-logo" src="images/logo.png" alt="FusionCharts" title="FusionCharts"></li>
+            <ul>
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Candidates</a></li>
@@ -35,13 +35,22 @@
                         Find a Job
                         <div class="search-box">
                             <div class="search-item">
-                                <i class="icon-briefcase"></i> <input id="spec" name="spec" type="text" placeholder=" Eg. Graphic. Web Design." />
+                                <i class="icon-briefcase"></i> 
+                                <div class="input-wrapper">
+                                    <input id="spec" name="spec" type="text" placeholder=" Eg. Graphic. Web Design." />
+                                </div>
                             </div>
                             <div class="search-item">
-                                <i class="reversed icon-ctrl"></i> <input id="category" name="category" type="text" placeholder="Category" />
+                                <i class="reversed icon-ctrl"></i> 
+                                <div class="input-wrapper">
+                                    <input id="category" name="category" type="text" placeholder="Category" />
+                                </div>
                             </div>
                             <div class="search-item">
-                                <i class="icon-location"></i> <input id="location" name="location" type="text" placeholder="Location" />
+                                <i class="icon-location"></i> 
+                                <div class="input-wrapper">
+                                    <input id="location" name="location" type="text" placeholder="Location" />
+                                </div>
                             </div>
                             <button class="btn btn-orange btn-search" onclick="">Search</button>
                         </div>
@@ -59,28 +68,28 @@
         <ul>
             <li>
                 <span class="icon flaticon-resume"></span>
-                <span class="txt-title">Search millions of jobs</span>
+                <h4>Search millions of jobs</h4>
                 <p>
                     A small river named Duden flows by their place and supplies.
                 </p>
             </li>
             <li>
                 <span class="icon flaticon-collaboration"></span>
-                <span class="txt-title">Easy to Manage jobs</span>
+                <h4>Easy to Manage jobs</h4>
                 <p>
                     A small river named Duden flows by their place and supplies.
                 </p>
             </li>
             <li>
                 <span class="icon flaticon-promotions"></span>
-                <span class="txt-title">Top Careers</span>
+                <h4>Top Careers</h4>
                 <p>
                     A small river named Duden flows by their place and supplies.
                 </p>
             </li>
             <li>
                 <span class="icon flaticon-employee"></span>
-                <span class="txt-title">Search Expert Candidates</span>
+                <h4>Search Expert Candidates</h4>
                 <p>
                     A small river named Duden flows by their place and supplies.
                 </p>
@@ -88,101 +97,101 @@
         </ul>
     </section>
     <section class="section-container packed center">
-        <p>Job Categories</p>
-        <h2>Top Categories</h2>
+        <h2 class="small">Job Categories</h2>
+        <h3 class="large">Top Categories</h3>
         <ul class="bordered">
             <li>
-                <span class="txt-block no-padding">Web Development</span>
+                <h4 class="normal">Web Development</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Education &amp; Training</span>
+                <h4 class="normal">Education &amp; Training</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">PHP Programming</span>
+                <h4 class="normal">PHP Programming</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Web Designer</span>
+                <h4 class="normal">Web Designer</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Graphic Designer</span>
+                <h4 class="normal">Graphic Designer</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">English</span>
+                <h4 class="normal">English</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Project Management</span>
+                <h4 class="normal">Project Management</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Customer Sevice</span>
+                <h4 class="normal">Customer Sevice</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Multimedia</span>
+                <h4 class="normal">Multimedia</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Social Media</span>
+                <h4 class="normal">Social Media</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Finance Management</span>
+                <h4 class="normal">Finance Management</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Marketing &amp; Sales</span>
+                <h4 class="normal">Marketing &amp; Sales</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Advertising</span>
+                <h4 class="normal">Advertising</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Writing</span>
+                <h4 class="normal">Writing</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Office &amp; Admin</span>
+                <h4 class="normal">Office &amp; Admin</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
             </li>
             <li>
-                <span class="txt-block no-padding">Software Development</span>
+                <h4 class="normal">Software Development</h4>
                 <p>
                     <span class="txt-orange-block">200</span> Open position
                 </p>
@@ -203,47 +212,47 @@
     </section>
     <section class="section-container center">
         <div class="col-1">
-            <p>Recently Added Jobs</p>
-            <h2>Hot Jobs</h2>
+            <h2 class="small">Recently Added Jobs</h2>
+            <h3 class="large">Hot Jobs</h3>
             <ul class="block bordered">
                 <li>
                     <span class="txt-block-large">Frontend Development <span class="job-type blue">Partime</span></span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span> <span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
                 </li>
                 <li>
                     <span class="txt-block-large">Full Stack Developer <span class="job-type yellow">Fulltime</span> </span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span> <span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
                 </li>
                 <li>
                     <span class="txt-block-large">Open Source Interactive Developer <span class="job-type sea-green">Freelance</span> </span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span> <span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
                 </li>
                 <li>
                     <span class="txt-block-large">Full Stack Developer <span class="job-type gray">Internship</span> </span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span> <span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
                 </li>
                 <li>
                     <span class="txt-block-large">Open Source Interactive Developer <span class="job-type red">Temporary</span></span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span><span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
                 </li>
                 <li>
                     <span class="txt-block-large">Frontend Development <span class="job-type yellow">Fulltime</span></span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span><span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
@@ -251,21 +260,21 @@
 
                 <li>
                     <span class="txt-block-large">Open Source Interactive Developer <span class="job-type sea-green">Freelance</span></span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span><span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
                 </li>
                 <li>
                     <span class="txt-block-large">Frontend Development <span class="job-type gray">Internship</span></span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span><span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
                 </li>
                 <li>
                     <span class="txt-block-large">Open Source Interactive Developer <span class="job-type red">Temporary</span></span>
-                    <span class="txt-blue"><i class="icon-stack"></i>FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
+                    <span class="txt-gray"><i class="icon-stack"></i></span><span class="txt-blue">FACEBOOK INC</span>&nbsp;<span class="txt-gray"><i class="icon-location"></i>WESTERN CITY, UK</span>
 
                     <button class="btn btn-blue btn-apply" onclick="">Apply Job</button>
                     <button class="btn btn-fav" onclick=""><i class="ico-heart icon-heart"></i></button>
@@ -273,8 +282,8 @@
             </ul>
         </div>
         <div class="col-2">
-            <p>Recruitment agencies</p>
-            <h2>Top Recruitments</h2>
+            <h2 class="small">Recruitment agencies</h2>
+            <h3 class="large">Top Recruitments</h3>
             <ul class="block cards">
                 <li>
                     <img class="img-full" src="images/company-1.jpg" alt="Google" title="Google">
@@ -335,8 +344,8 @@
         </div>
     </section>
     <section class="section-container center">
-        <p>Testimonial</p>
-        <h2>Happy Clients</h2>
+        <h2 class="small">Testimonial</h2>
+        <h3 class="large">Happy Clients</h3>
         <ul class="segment-3 gap">
             <li>
                 <div class="profile-pic-container">
@@ -346,7 +355,7 @@
                 <p>
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                 </p>
-                <span class="txt-title">Roger Scott</span>
+                <h4>Roger Scott</h4>
                 <p class="txt-gray">SYSTEM ANALYST</p>
             </li>
             <li>
@@ -357,7 +366,7 @@
                 <p>
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                 </p>
-                <span class="txt-title">Roger Scott</span>
+                <h4>Roger Scott</h4>
                 <p class="txt-gray">MARKETING MANAGER</p>
             </li>
             <li>
@@ -368,22 +377,22 @@
                 <p>
                     Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                 </p>
-                <span class="txt-title">Roger Scott</span>
+                <h4>Roger Scott</span>
                 <p class="txt-gray">INTERFACE DESIGER</p>
             </li>
         </ul>
 
-        <div>
-            <span class="selection-dot-wrapper"><span class="selection-dot active"></span></span>
-            <span class="selection-dot-wrapper"><span class="selection-dot"></span></span>
-            <span class="selection-dot-wrapper"><span class="selection-dot"></span></span>
-            <span class="selection-dot-wrapper"><span class="selection-dot"></span></span>
-            <span class="selection-dot-wrapper"><span class="selection-dot"></span></span>
-        </div>
+        <ul class="dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
     </section>
     <section class="section-container center deep candidates">
-        <p>Candidates</p>
-        <h2>Latest Candidates</h2>
+        <h2 class="small">Candidates</h2>
+        <h3 class="large">Latest Candidates</h3>
         <ul class="segment-5 gap">
             <li>
                 <img src="images/person_2.jpg" class="img-circle-large" alt="Nicole Simon" title="Nicole Simon">
@@ -411,38 +420,38 @@
                 <p>WESTERN CITY, UK</p>
             </li>
         </ul>
-        <div>
-            <span class="selection-dot-wrapper"><span class="selection-dot white"></span></span>
-            <span class="selection-dot-wrapper"><span class="selection-dot active"></span></span>
-        </div>
+        <ul class="dots white-dot">
+            <li class="dot"></li>
+            <li class="dot active"></li>
+        </ul>
     </section>
     <section class="section-container center blog-container">
-        <p>Our Blog</p>
-        <h2><span class="thin">Recent</span> Blogs</h2>
+        <h2 class="small">Our Blog</h2>
+        <h3 class="large"><span class="thin">Recent</span> Blogs</h3>
         <article class="gap">
             <img class="img-full" src="images/image_1.jpg" alt="Meeting" title="Meeting">
-            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-envelop"></i> 3</span>
+            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-hangouts"></i> 3</span>
             <p>
                 Even all-powerful Pointing has no control about the blind texts.
             </p>
         </article>
         <article class="gap">
             <img class="img-full" src="images/image_2.jpg" alt="Woman with Laptop" title="Woman with Laptop ">
-            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-envelop"></i> 3</span>
+            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-hangouts"></i> 3</span>
             <p>
                 Even all-powerful Pointing has no control about the blind texts.
             </p>
         </article>
         <article class="gap">
             <img class="img-full" src="images/image_3.jpg" alt="Meeting" title="Meeting">
-            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-envelop"></i> 3</span>
+            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-hangouts"></i> 3</span>
             <p>
                 Even all-powerful Pointing has no control about the blind texts.
             </p>
         </article>
         <article class="gap">
             <img class="img-full" src="images/image_4.jpg" alt="Meeting" title="Meeting">
-            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-envelop"></i> 3</span>
+            <span class="txt-block txt-gray">MAY 3, 2019 ADMIN <i class="icon-hangouts"></i> 3</span>
             <p>
                 Even all-powerful Pointing has no control about the blind texts.
             </p>
