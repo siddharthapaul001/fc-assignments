@@ -41,17 +41,17 @@ ul li{
     margin:0;
 }
 .notification-list .notification-item a{
-    padding: 15px;
+    padding: 10px 15px;
     display:block;
     text-decoration: none;
     color: #000;
 }
 
 .notification-dp-wraper{
-    display:inline-block;
     position:relative;
-    width:20%;
-    vertical-align: middle;
+    width:50px;
+    height:50px;
+    float:left;
 }
 
 .notification-item.like .notification-dp-wraper::after{
@@ -59,7 +59,7 @@ ul li{
     background-color: #f95a61;
     border-radius: 50%;
     right: 5px;
-    bottom: -10px;
+    bottom: 0;
     content: '\f024';
     font-family: FontAwesome;
     color: #fff;
@@ -68,9 +68,8 @@ ul li{
 }
 
 .notification-text-wraper{
-    display:inline-block;
     position:relative;
-    width: 78%;
+    padding: 5px 0 5px 50px;
     vertical-align: middle;
 }
 
@@ -86,9 +85,9 @@ ul li{
 }
 
 .notification-dp{
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
+    width:50px;
+    height:50px;
+    border-radius: 25px;
 }
 
 .notification-time{
