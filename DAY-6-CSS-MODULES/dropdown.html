@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="fonts/fontAwesome.css">
+<style>
+ul{
+    list-style-type:none;
+}
+ul li{
+   position:relative;
+}
+.notification-box{
+    position:absolute;
+    width: 320px;
+    box-shadow: 0 0 5px #ddd;
+}
+.notification-box-title{
+    padding: 15px 10px;
+    background-color: #f95a61;
+    color: #fff;
+    position:relative;
+}
+.notch-up{
+    position:absolute;
+    top: -10px;
+    right: 10%;
+    display:block;
+    height:0;
+    width:0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f95a61;
+}
+.notification-list{
+    display:block;
+    padding:0;
+    margin:0;
+}
+.notification-list .notification-item{
+    padding:0;
+    margin:0;
+}
+.notification-list .notification-item a{
+    padding: 15px;
+    display:block;
+    text-decoration: none;
+    color: #000;
+}
+
+.notification-dp-wraper{
+    display:inline-block;
+    position:relative;
+    width:20%;
+    vertical-align: middle;
+}
+
+.notification-item.like .notification-dp-wraper::after{
+    position:absolute;
+    background-color: #f95a61;
+    border-radius: 50%;
+    right: 5px;
+    bottom: -10px;
+    content: '\f024';
+    font-family: FontAwesome;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.notification-text-wraper{
+    display:inline-block;
+    position:relative;
+    width: 78%;
+    vertical-align: middle;
+}
+
+.notification-item.unseen .notification-text-wraper::after{
+    position:absolute;
+    height: 8px;
+    width: 8px;
+    background-color: #2fb6ab;
+    border-radius: 4px;
+    right: 0;
+    top: 40%;
+    content: ' ';
+}
+
+.notification-dp{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.notification-time{
+    color: #999;
+    display:block;
+    padding: 5px 2px;
+}
+</style>
+</head>
+<body>
+<ul>
+<li>
+G
+<div class="notification-box">
+<div class="notification-box-title">
+Notifications
+<span class="notch-up"></span>
+</div>
+<ul class="notification-list">
+<li class="notification-item unseen like">
+<a href="#">
+    <div class="notification-dp-wraper">
+	    <img class="notification-dp" src="" alt="Name" title="name">
+    </div>
+    <div class="notification-text-wraper">
+        <strong>Someone</strong> liked your post.
+        <span class="notification-time">2 hours ago</span>
+    </div> 
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</body>
