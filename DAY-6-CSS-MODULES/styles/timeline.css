@@ -93,10 +93,12 @@ ul.tag-list{
 
 ul.tag-list li{
     display: inline-block;
-    padding: 4px 7px;
+    padding: 7px 9px;
     border-radius: 5px;
     border-width: 1px;
     border-style: solid;
+    font-weight: bold;
+    font-size: small;
 }
 
 ul.timeline li.purple, ul.timeline li.purple li{
@@ -105,16 +107,16 @@ ul.timeline li.purple, ul.timeline li.purple li{
 }
 
 ul.timeline li.orange, ul.timeline li.orange li{
-    background-color: #C97D47;
+    background-color: #f2711d;
     color: #fff;
 }
 
 ul.timeline li.yellow, ul.timeline li.yellow li{
-    background-color:#DFC55D;
+    background-color:#fbbd0b;
     color: #fff;
 }
 
 ul.timeline li.red, ul.timeline li.red li{
-    background-color: #BC4433;
+    background-color: #dc2828;
     color: #fff;
 }

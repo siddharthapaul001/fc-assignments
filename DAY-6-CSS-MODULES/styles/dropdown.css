@@ -50,6 +50,10 @@ ul li.notification:hover > .notification-box{
     font-size: 16px;
 }
 
+.notification-box-title h4{
+    margin:0;
+}
+
 .btn-settings{
     color: #fff;
     position: absolute;
@@ -90,6 +94,8 @@ ul li.notification:hover > .notification-box{
     display:block;
     padding:0;
     margin:0;
+    max-height: 600px;
+    overflow: auto;
 }
 .notification-list .notification-item{
     padding:0;
