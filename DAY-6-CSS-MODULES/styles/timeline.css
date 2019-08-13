@@ -18,6 +18,9 @@ ul.timeline > li{
     border-radius: 50%;
     margin-bottom: 150px;
     position: relative;
+}
+
+ul.timeline > li > span{
     font-size: 20px;
 }
 
