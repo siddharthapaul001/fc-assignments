@@ -26,7 +26,7 @@ ul li.notification::before{
 .notification-box{
     position:absolute;
     width: 360px;
-    box-shadow: 0 0 5px #ddd;
+    box-shadow: 0 10px 7px #aaa;
     right: -29px;
     top:35px;
     display: none;
