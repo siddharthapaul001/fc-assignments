@@ -1,0 +1,137 @@
+ul.timeline{
+    margin: 0 auto;
+    width: 2px;
+    padding: 0 0 50px 0;
+    list-style-type: none;
+    background-color: #333;
+    position: relative;
+    font-family: sans-serif;
+}
+
+ul.timeline > li{
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 50%;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.timeline-item-wrapper{
+    position: relative;
+}
+
+.timeline-item{
+    position: absolute;
+    width: 420px;
+    top: 0px;
+    text-align: center;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-radius: 5px;
+    color: #000;
+    box-shadow: 0 3px 0 #aaa;
+}
+
+.timeline-item .time{
+    padding: 7px 0;
+    background-color: #eee;
+    font-size: 13px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.timeline li:nth-child(2n) .timeline-item{
+    right: 100px;
+}
+
+.timeline li:nth-child(2n + 1) .timeline-item{
+    left: 100px;
+}
+
+.notch{
+    height: 0;
+    width: 0;
+    display: inline-block;
+}
+
+.timeline li:nth-child(2n) .time .notch{
+    position: absolute;
+    right: -7px;
+    top: 10px;
+    border-left: 7px solid #eee;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+}
+
+.timeline li:nth-child(2n + 1) .time .notch{
+    position: absolute;
+    left: -7px;
+    top:10px;
+    border-right: 7px solid #eee;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+}
+
+.timeline-item .text-container{
+    padding: 0 5%;
+}
+
+ul.tag-list{
+    list-style-type: none;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+ul.tag-list li{
+    display: inline-block;
+    padding: 4px 7px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+ul.timeline li.purple, ul.timeline li.purple li{
+    background-color: purple;
+    color: #fff;
+}
+
+ul.timeline li.orange, ul.timeline li.orange li{
+    background-color: #C97D47;
+    color: #fff;
+}
+
+ul.timeline li.yellow, ul.timeline li.yellow li{
+    background-color:#DFC55D;
+    color: #fff;
+}
+
+ul.timeline li.red, ul.timeline li.red li{
+    background-color: #BC4433;
+    color: #fff;
+}
+
+.icon{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-family: FontAwesome;
+}
+.icon-add-user::before{
+    content: '\f234';
+}
+
+.icon-pencil::before{
+    content: '\f303';
+}
+
+.icon-graduation:before{
+    content: '\f19d';
+}
+
+.icon-car::before{
+    content: '\f5de';
+}
