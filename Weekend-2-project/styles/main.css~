@@ -159,7 +159,7 @@ nav a{
 
 .section-welcome{
     position: relative;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .welcome-text-container{
