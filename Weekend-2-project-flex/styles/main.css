@@ -38,11 +38,16 @@ h3.large{
 ul{
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 nav ul{
     text-align: right;
     padding-right: 25px;
+    display: block;
 }
 
 nav li{
@@ -178,6 +183,8 @@ nav a{
 
 .tabs{
     list-style-type: none;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .tabs li{
@@ -212,6 +219,7 @@ nav a{
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
+    cursor: default;
 }
 
 .search-item{
@@ -221,7 +229,6 @@ nav a{
     width: 19%;
     border: 1px solid #fff;
     border-radius: 3px;
-    margin-right: 2px;
     text-align: left;
     vertical-align: middle;
 }
@@ -278,8 +285,10 @@ input:hover, input:focus{
 }
 
 .tabs li.active .search-box{
-    display: block;
+    display: flex;
     background-color: #6c63ff;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .section-container{
@@ -292,8 +301,7 @@ input:hover, input:focus{
 
 .section-container li{
     display: inline-block;
-    width: 18%;
-    margin-right: 2%;
+    width: 21%;
     text-align: left;
     vertical-align: top;
 }
@@ -303,13 +311,16 @@ input:hover, input:focus{
 }
 
 .packed li{
-    margin-right: 1%;
     padding-top: 20px;
-    width: 19%;
+    width: 21%;
 }
 
 ul.bordered li{
     border-bottom: 2px solid rgba(255, 99, 71, 0.1);
+}
+
+ul.block{
+    display: block;
 }
 
 ul.block li{
@@ -575,6 +586,10 @@ article p{
 .subscription-input-wrapper .btn-subscribe:hover{
     background-color: #c94d37;
     border-color: #c94d37;
+}
+
+ul.dots{
+    display: block;
 }
 
 ul.dots li.dot{

@@ -3,27 +3,88 @@
 <head>
 <link rel="stylesheet" type="text/css" href="fonts/fontAwesome.css">
 <style>
+
+    @keyframes animateNotification{
+        from{top: 10px; opacity: 0;}
+        to{top:35px;opacity: 1;}
+    }
+
 ul{
-    list-style-type:none;
+    text-align: center;
+    list-style-type: none;
 }
-ul li{
-   position:relative;
+ul li.notification{
+    display: inline-block;
+    position: relative;
+    padding: 7px;
+    background-color: #3f6c8c;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: 14px;
 }
+
+ul li.notification::before{
+    content: '\f0f3';
+    font-family: FontAwesome;
+    color: #fff;
+}
+
 .notification-box{
     position:absolute;
-    width: 320px;
+    width: 360px;
     box-shadow: 0 0 5px #ddd;
+    right: -29px;
+    top:35px;
+    display: none;
 }
+
+ul li.notification:hover > .notification-box{
+    display: block;
+    animation: animateNotification 600ms 1;
+}
+
 .notification-box-title{
-    padding: 15px 10px;
+    padding: 17px 25px;
     background-color: #f95a61;
+    border: 1px solid #f95a61;
     color: #fff;
     position:relative;
+    right: 0;
+    left: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
 }
+
+.btn-settings{
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-settings::before{
+    content: '\f013';
+    padding: 10px;
+    font-family: FontAwesome;
+    font-size: 20px;
+}
+
+.btn-settings:hover{
+    transform: rotate(270deg);
+    outline: none;
+    box-shadow: none;
+}
+
 .notch-up{
     position:absolute;
     top: -10px;
-    right: 10%;
+    right: 32px;
     display:block;
     height:0;
     width:0;
@@ -39,12 +100,23 @@ ul li{
 .notification-list .notification-item{
     padding:0;
     margin:0;
+    display: block;
+    text-align: left;
+    background-color: #fdfdfd;
 }
-.notification-list .notification-item a{
-    padding: 10px 15px;
+.notification-list .notification-item a, a.btn-show-all{
+    padding: 5px 15px;
     display:block;
     text-decoration: none;
-    color: #000;
+    color: #2fb6ab;
+    text-decoration: none;
+    display: block;
+}
+
+a.btn-show-all{
+    padding: 10px 0 15px 0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .notification-dp-wraper{
@@ -57,20 +129,67 @@ ul li{
 .notification-item.like .notification-dp-wraper::after{
     position:absolute;
     background-color: #f95a61;
+    border: 1px solid #fff;
     border-radius: 50%;
-    right: 5px;
+    right: 0;
     bottom: 0;
-    content: '\f024';
+    content: '\f004';
     font-family: FontAwesome;
     color: #fff;
     padding: 5px;
     font-size: 10px;
 }
 
+.notification-item.comment .notification-dp-wraper::after{
+    position:absolute;
+    background-color: #3f6c8c;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    content: '\f075';
+    font-family: FontAwesome;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    transform: scaleX(-1);
+}
+
+.notification-item.follow .notification-dp-wraper::after{
+    position:absolute;
+    background-color: #3f6c8c;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    content: '\f007';
+    font-family: FontAwesome;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.notification-item.warning .notification-dp-wraper::after{
+    position:absolute;
+    background-color: #3f6c8c;
+    border: 1px solid #3f6c8c;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    content: '\f071';
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 25px 25px 15px;
+}
+
 .notification-text-wraper{
     position:relative;
-    padding: 5px 0 5px 50px;
+    padding: 5px 0 5px 60px;
     vertical-align: middle;
+    color: #444;
 }
 
 .notification-item.unseen .notification-text-wraper::after{
@@ -93,33 +212,82 @@ ul li{
 .notification-time{
     color: #999;
     display:block;
-    padding: 5px 2px;
+    padding: 5px 0;
 }
+
 </style>
 </head>
 <body>
-<ul>
-<li>
-G
-<div class="notification-box">
-<div class="notification-box-title">
-Notifications
-<span class="notch-up"></span>
-</div>
-<ul class="notification-list">
-<li class="notification-item unseen like">
-<a href="#">
-    <div class="notification-dp-wraper">
-	    <img class="notification-dp" src="" alt="Name" title="name">
-    </div>
-    <div class="notification-text-wraper">
-        <strong>Someone</strong> liked your post.
-        <span class="notification-time">2 hours ago</span>
-    </div> 
-</a>
-</li>
-</ul>
-</div>
-</li>
+    <ul>
+    <li class="notification">
+        <div class="notification-box">
+            <div class="notification-box-title">
+            Notifications
+            <span class="notch-up"></span>
+            <button class="btn-settings" onclick=""></button>
+            </div>
+            <ul class="notification-list">
+                <li class="notification-item unseen follow">
+                    <a href="#">
+                        <div class="notification-dp-wraper">
+                            <img class="notification-dp" src="https://via.placeholder.com/150/006d80/ffffff?Text=dp" alt="Name" title="name">
+                        </div>
+                        <div class="notification-text-wraper">
+                            <strong>Someone</strong> followed <strong>you</strong>
+                            <span class="notification-time">2 hours ago</span>
+                        </div> 
+                    </a>
+                </li>
+                <li class="notification-item unseen like">
+                    <a href="#">
+                        <div class="notification-dp-wraper">
+                            <img class="notification-dp" src="https://via.placeholder.com/150/333333/ffffff?Text=dp" alt="Name" title="name">
+                        </div>
+                        <div class="notification-text-wraper">
+                            <strong>Someone</strong> liked <strong>your post</strong>
+                            <span class="notification-time">2 hours ago</span>
+                        </div> 
+                    </a>
+                </li>
+                <li class="notification-item like">
+                    <a href="#">
+                        <div class="notification-dp-wraper">
+                            <img class="notification-dp" src="https://via.placeholder.com/150/999999/ffffff?Text=dp" alt="Name" title="name">
+                        </div>
+                        <div class="notification-text-wraper">
+                            <strong>Someone</strong> liked <strong>your post</strong>
+                            <span class="notification-time">2 hours ago</span>
+                        </div> 
+                    </a>
+                </li>
+                <li class="notification-item warning">
+                    <a href="#">
+                        <div class="notification-dp-wraper">
+                        </div>
+                        <div class="notification-text-wraper">
+                            <strong>Running low on storage space</strong>
+                            <span class="notification-time">2 hours ago</span>
+                        </div> 
+                    </a>
+                </li>
+                <li class="notification-item comment">
+                    <a href="#">
+                        <div class="notification-dp-wraper">
+                            <img class="notification-dp" src="https://via.placeholder.com/150/ff2d57/ffffff?Text=dp" alt="Name" title="name">
+                        </div>
+                        <div class="notification-text-wraper">
+                            <strong>Shanon Shaw</strong> commented on <strong>your post</strong>
+                            <span class="notification-time">2 hours ago</span>
+                        </div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn-show-all">
+                        See all recent activity
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
 </ul>
 </body>
