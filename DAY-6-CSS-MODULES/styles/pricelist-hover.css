@@ -139,6 +139,9 @@ ul.features-list li{
     font-weight: bold;
     box-shadow: 0 4px 0 #ddd;
 }
+.btn-signup:hover, .btn-signup:focus{
+    outline: none;
+}
 .blue .btn-signup{
     border: 2px solid #03658C;
 }
