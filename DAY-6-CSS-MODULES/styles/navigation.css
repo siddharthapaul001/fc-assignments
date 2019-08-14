@@ -3,6 +3,10 @@
     to{left:99%;opacity: 1;}
 }
 
+html,body{
+    margin: 0;
+}
+
 .navigation ul{
     list-style-type: none;
     background-color:#F2E1D1;
@@ -25,12 +29,14 @@
     text-decoration: none;
     color: #000;
     display: block;
-    padding: 10px 5px;
+    padding: 15px;
+    margin-right: 10px;
 }
 .navigation li > a::after{
     content: '\f107';
     font-family: FontAwesome;
     padding-left: 5px;
+    color: #999;
 }
 
 .navigation li .submenu-container{

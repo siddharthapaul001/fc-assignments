@@ -37,7 +37,6 @@ ul.timeline > li > span{
     border-right: 1px solid #eee;
     border-radius: 5px;
     color: #000;
-    box-shadow: 0 3px 0 #aaa;
 }
 
 .timeline-item .time{
@@ -119,4 +118,20 @@ ul.timeline li.yellow, ul.timeline li.yellow li{
 ul.timeline li.red, ul.timeline li.red li{
     background-color: #dc2828;
     color: #fff;
+}
+
+ul.timeline li.purple .timeline-item{
+    border-bottom: 1px solid purple;
+}
+
+ul.timeline li.yellow .timeline-item{
+    border-bottom: 1px solid #fbbd0b;
+}
+
+ul.timeline li.red .timeline-item{
+    border-bottom: 1px solid #dc2828;
+}
+
+ul.timeline li.orange .timeline-item{
+    border-bottom: 1px solid #f2711d;
 }
