@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricelist</title>
+    <link rel="stylesheet" type="text/css" href="styles/pricelist-hover.css">
+</head>
+<body>
+    <ul class="pricelist-container">
+        <li class="price-card green">
+            <h2>START</h2>
+            <span class="price-value">
+                15
+                <span class="paisa">
+                    99
+                </span>
+            </span>
+            <ul class="features-list">
+                <li>10 Email Accounts</li>
+                <li>1 Admin Account</li>
+                <li>10Gb Disk Space</li>
+                <li>100GB Bandwidth</li>
+            </ul>
+            <button class="btn-signup">SIGN-UP</button>
+        </li>
+        <li class="price-card blue active">
+            <h2>PRO</h2>
+            <span class="price-value">
+                25
+                <span class="paisa">
+                    99
+                </span>
+            </span>
+            <ul class="features-list">
+                <li>20 Email Accounts</li>
+                <li>2 Admin Account</li>
+                <li>20Gb Disk Space</li>
+                <li>150GB Bandwidth</li>
+            </ul>
+            <button class="btn-signup">SIGN-UP</button>
+        </li>
+        <li class="price-card red">
+            <h2>ULTIMATE</h2>
+            <span class="price-value">
+                35
+                <span class="paisa">
+                    99
+                </span>
+            </span>
+            <ul class="features-list">
+                <li>50 Email Accounts</li>
+                <li>5 Admin Account</li>
+                <li>50Gb Disk Space</li>
+                <li>200GB Bandwidth</li>
+            </ul>
+            <button class="btn-signup">SIGN-UP</button>
+        </li>
+    </ul>
+</body>

@@ -1,0 +1,162 @@
+
+ul.pricelist-container{
+    list-style-type: none;
+    text-align: center;
+    font-family: sans-serif;
+    width: 800px;
+    margin: 30px auto;
+}
+
+li.price-card{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px #aaa;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+li.price-card:hover{
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: transform .3s ease;
+}
+
+.price-card h2{
+    margin:0;
+    padding: 15px 0 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}
+
+li.price-card:hover h2{
+    font-size: 32px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.blue h2, .blue ul.features-list li{
+    border-bottom-color:  #0C4961;
+}
+
+.red h2, .red ul.features-list li{
+    border-bottom-color: #B2483C;
+}
+
+.green h2, .green ul.features-list li{
+    border-bottom-color: #639E38;
+}
+
+.blue h2, .blue .paisa::before, .blue .btn-signup{
+    background-color: #03658C;
+}
+
+.red h2, .red .paisa::before, .red .btn-signup{
+    background-color: #D74E3D;
+}
+
+.green h2, .green .paisa::before, .green .btn-signup{
+    background-color: #6EC33F;
+}
+
+.price-value{
+    padding: 15px 0 5px 0;
+    font-size:60px;
+    font-weight: 900;
+    position: relative;
+    display: inline-block;
+}
+
+.price-value::before{
+    content: '$';
+    position: absolute;
+    bottom: 9%;
+    left: -35%;
+    font-size: 42px;
+}
+
+.price-value::after{
+    content: '/mo';
+    position: absolute;
+    bottom: 15%;
+    right: -45px;
+    font-size: 24px;
+}
+
+.blue .price-value{
+    color: #03658C;
+}
+
+.red .price-value{
+    color: #D74E3D;
+}
+
+.green .price-value{
+    color: #6EC33F;
+}
+
+.paisa{
+    position: absolute;
+    font-size: 28px;
+    top:25%;
+    right: -40px;
+    display: inline-block;
+}
+
+.paisa::before{
+    content: ' ';
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    left: 5px;
+}
+
+ul.features-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.features-list li{
+    display: block;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    color: #999;
+    padding: 20px 0 5px 0;
+}
+.btn-signup{
+    padding: 7px 20px;
+    color: #fff;
+    margin: 25px 0;
+    border-radius: 7px;
+    font-weight: bold;
+    box-shadow: 0 4px 0 #ddd;
+}
+.blue .btn-signup{
+    border: 2px solid #03658C;
+}
+.blue .btn-signup:hover{
+    background-color:  #0C4961;
+    border-color:  #0C4961;
+}
+.red .btn-signup{
+    border: 2px solid #D74E3D;
+}
+.red .btn-signup:hover{
+    background-color: #B2483C;
+    border-color: #B2483C;
+}
+.green .btn-signup{
+    border: 2px solid #6EC33F;
+}
+.green .btn-signup:hover{
+    background-color: #639E38;
+    border-color: #639E38;
+}
