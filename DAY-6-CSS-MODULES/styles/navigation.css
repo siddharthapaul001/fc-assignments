@@ -1,6 +1,6 @@
 @keyframes slideRight {
-    from{left: 110%;opacity: 0;}
-    to{left:99%;opacity: 1;}
+    from{left: 90%;}
+    to{left:99%;}
 }
 
 html,body{
