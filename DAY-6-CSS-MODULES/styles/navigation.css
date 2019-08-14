@@ -46,7 +46,8 @@ html,body{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding: 20px 0;
-    top: 50px;
+    top: 55px;
+    left: 20%;
     display: none;
     box-shadow: 0 0 5px #aaa;
 }
