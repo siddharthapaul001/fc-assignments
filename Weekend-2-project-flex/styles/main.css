@@ -35,6 +35,18 @@ ul li{
     display: block;
 }
 
+.section-container ul li{
+    margin-bottom: 60px;
+}
+
+.black ul li{
+    margin-bottom: 0;
+}
+@media (min-width: 992px) {
+    .section-container ul li{
+        margin-bottom: 0;
+    }
+}
 
 img{
     width: 100%;
@@ -71,7 +83,7 @@ nav a{
     width: 80%;
 }
 
-@media (min-width: 576px){
+@media (min-width: 992px){
     .img-logo{
         width: 128px;
         float: left;
@@ -556,6 +568,7 @@ ul.cards span.txt-block{
 
 .profile-pic-container{
     position: relative;
+    display: inline-block;
 }
 
 .candidates li{
@@ -625,11 +638,13 @@ ul.cards span.txt-block{
     text-align: left;
     padding-left: 10px;
     padding-top: 15px;
+    margin-bottom: 5px;
 }
 
 .blog-container{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 article{
@@ -646,6 +661,17 @@ article p{
     .blog-container{
         flex-direction: row;
         padding: 0;
+        flex-wrap: wrap;
+    }
+    article{
+        width: 45%;
+    }
+}
+@media (min-width: 992px){
+    .blog-container{
+        flex-direction: row;
+        padding: 0;
+        flex-wrap: nowrap;
     }
 }
 
@@ -657,6 +683,16 @@ article p{
 }
 
 @media (min-width: 576px){
+    .packed ul{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .packed ul li{
+        width: 48%;
+    }
+}
+
+@media (min-width: 992px){
     .packed ul{
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -684,6 +720,37 @@ article p{
     padding: 10px;
 }
 
+@media (min-width: 576px) {
+    ul.segment-5{
+        flex-wrap: wrap;
+    }
+    .segment-5 li{
+        width: 30%;
+    }
+
+    .segment-4 ul{
+        flex-wrap: wrap;
+    }
+    .segment-4 ul li{
+        width: 45%;
+    }
+}
+@media (min-width: 992px) {
+    ul.segment-5{
+        flex-wrap: nowrap;
+    }
+    .segment-5 li{
+        width: 20%;
+    }
+
+    .segment-4 ul{
+        flex-wrap: nowrap;
+    }
+    .segment-4 ul li{
+        width: 20%;
+    }
+}
+
 .col-1, .col-2{
     text-align: left;
     padding: 0 10px;
@@ -705,18 +772,28 @@ article p{
     order: 4;
 }
 
-@media (min-width: 576px){
+@media (min-width: 992px){
     .flex-container{
         flex-direction: row;
     }
     .col-1{
-        width: 70%;
+        width: 60%;
     }
     .col-2{
         width: 20%;
     }
     .segment-3 li{
         width: 25%;
+    }
+}
+
+.changable-align{
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .changable-align{
+        text-align: left;
     }
 }
 
