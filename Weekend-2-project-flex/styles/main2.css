@@ -705,6 +705,7 @@ ul.dots{
 }
 
 ul.dots li.dot{
+    display: inline-block;
     width: 20px;
     height: 20px;
     padding: 0;
