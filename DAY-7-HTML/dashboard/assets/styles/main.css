@@ -296,11 +296,32 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     font-weight: bold;
     z-index: 20;
 }
+.circular-chart-in .small{
+    font-size: xx-small;
+}
+
+.circular-chart-in .number{
+    font-size: x-large;
+}
 /* end of Circular chart */
 
 /* Barchart */
 .barchart-container{
     width: 50%;
+}
+
+.x-axis{
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.x-axis span{
+    display: inline-block;
+    font-size: x-small;
+    font-weight: bold;
+    width: 10px; /* Same size of a single bar */
 }
 
 .y-axis{
@@ -318,10 +339,11 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     margin-left: 50px;
 }
 
-.bar-wrapper{
+.bars-wrapper{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 .bar{
     background-color: #d9e4eb;
