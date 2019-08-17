@@ -271,7 +271,7 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     100% ---> 360deg
     1%   ---> 3.6deg
 
-    Let we need to present p%
+    Let we need to represent p%
     if p < 50%:
         1st colored half-disk with no transform
         2nd nutral half-disk (colored same as background) with rotation transform (3.6 * p)deg
