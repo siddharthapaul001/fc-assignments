@@ -1,0 +1,64 @@
+/*  Let progress is 80%
+    (3.6 * (80-50))deg
+*/
+#half-disk-applicant{
+    transform: rotate(108deg);
+}
+/*  Let progress is 80%
+    (3.6 * 40)deg
+*/
+#half-disk-interview{
+    transform: rotate(144deg);
+}
+/*  Let progress is 80%
+    (3.6 * 20)deg
+*/
+#half-disk-forward{
+    transform: rotate(72deg);
+}
+
+#bar1 .fill{
+    height: 5%;
+}
+
+#bar2 .fill{
+    height: 20%;
+}
+
+#bar3 .fill{
+    height: 30%;
+}
+
+#bar4 .fill{
+    height: 60%;
+}
+#bar5 .fill{
+    height: 15%;
+}
+#bar6 .fill{
+    height: 20%;
+}
+#bar7 .fill{
+    height: 10%;
+}
+#bar8 .fill{
+    height: 5%;
+}
+#bar9 .fill{
+    height: 50%;
+}
+#bar10 .fill{
+    height: 70%;
+}
+#bar11 .fill{
+    height: 50%;
+}
+#bar12 .fill{
+    height: 40%;
+}
+#bar13 .fill{
+    height: 30%;
+}
+#bar14 .fill{
+    height: 20%;
+}
