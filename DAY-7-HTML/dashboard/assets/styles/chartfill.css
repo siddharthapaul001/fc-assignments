@@ -4,13 +4,13 @@
 #half-disk-applicant{
     transform: rotate(108deg);
 }
-/*  Let progress is 80%
+/*  Let progress is 40%
     (3.6 * 40)deg
 */
 #half-disk-interview{
     transform: rotate(144deg);
 }
-/*  Let progress is 80%
+/*  Let progress is 20%
     (3.6 * 20)deg
 */
 #half-disk-forward{
