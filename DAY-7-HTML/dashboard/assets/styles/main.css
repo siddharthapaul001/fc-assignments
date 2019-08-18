@@ -260,6 +260,7 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Circular chart */
@@ -284,7 +285,8 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
 
 .circular-chart-container{
     display: flex;
-    margin-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .circular-chart-out{
@@ -297,9 +299,9 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     justify-content: center;
     align-items: center;
     border-radius: 60px;
-    background-color: #d9e4eb;
     z-index: 1;
     margin-right: 10px;
+    box-sizing: border-box;
 }
 
 .progress{
@@ -311,6 +313,7 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     z-index: 10;
     border-radius: 60px;
     transition: transform 1s ease-in-out;
+    box-sizing: border-box;
 }
 
 .progress.green{
@@ -344,6 +347,7 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     font-size: smaller;
     font-weight: bold;
     z-index: 20;
+    box-sizing: border-box;
 }
 .circular-chart-in .small{
     font-size: xx-small;
@@ -352,11 +356,22 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
 .circular-chart-in .number{
     font-size: x-large;
 }
+.label{
+    margin:20px auto 50px auto;
+    padding: 7px 10px;
+    border: 1px solid #aaa;
+    border-radius: 14px;
+    font-size: small;
+    background-color: #fff;
+    display: inline-block;
+}
+
 /* end of Circular chart */
 
 /* Barchart */
 .barchart-container{
     width: 50%;
+    text-align: center;
 }
 
 .x-axis{
@@ -381,7 +396,7 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
     flex-direction: column;
     text-align: right;
     justify-content: space-between;
-    height: 150px;
+    height: 120px;
 }
 
 .bars{
@@ -397,7 +412,7 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
 .bar{
     background-color: #d9e4eb;
     width: 10px;
-    height: 150px;
+    height: 120px;
     display: inline-block;
     position: relative;
 }
@@ -416,6 +431,47 @@ nav.menu-secondary a:hover, nav.menu-secondary li.active a{
 
 .fill:hover{
     background-color: #36a8af;
+}
+
+.fill:hover .tooltip{
+    display: block;
+}
+.tooltip{
+    display: none;
+    position: relative;
+    width: 180px;
+    height: 40px;
+    background-color: #354052;
+    bottom:60px;
+    left: -85px;
+    z-index: 10;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    font-size: x-small;
+    padding: 5px 0;
+    border-radius: 3px;
+}
+.tooltip strong{
+    display: block;
+    padding-bottom: 3px;
+}
+.tooltip .txt-skyblue{
+    color: #51c9d2;
+}
+.tooltip .txt-blue{
+    color: #369ad8;
+}
+.notch-down{
+    position: absolute;
+    bottom: -10px;
+    left: 44%;
+    height:0;
+    width: 0;
+    display: block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #354052;
 }
 
 /* End barchart */
