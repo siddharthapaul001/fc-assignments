@@ -15,9 +15,11 @@ a{
     display: block;
 }
 
-h1{
+h1, h2{
     font-weight: normal;
 }
+
+/* Header section*/
 
 header{
     position: absolute;
@@ -29,11 +31,17 @@ header{
 }
 
 .img-logo{
-    float: left;
+    position: absolute;
+    left: 5%;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
 }
 
 nav ul{
     margin-top: 20px;
+    position: relative;
 }
 
 nav a{
@@ -46,9 +54,11 @@ nav li{
     display: inline-block;
 }
 
+
+/* Banner section */
 .section-banner{
-    background-color: #6c55cf;
-    height: 400px;
+    background-color: #6951ce;
+    height: 800px;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -56,6 +66,7 @@ nav li{
     flex-direction: column;
     position: relative;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .btn{
@@ -67,5 +78,209 @@ nav li{
     border: 1px solid #ff5e91;
     border-radius: 25px;
     color: #fff;
-    font-size: larger;
+}
+
+/* Strips */
+.strip{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(-45deg, #ffffff00 0%, #ffffff00 50%, #ffffff11 50%, #ffffff08 100%);
+}
+
+.strip-circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    top: -250px;
+    background-image: radial-gradient(300px, #ffffff22, #ffffff00);
+}
+
+.strip-1{
+    top: 5%;
+    left: 5%;
+    border-top-left-radius: 10px;
+}
+
+.strip-2{
+    left:0;
+    bottom:0;
+}
+.strip-3{
+    right:0;
+    bottom:45%;
+    background-image: linear-gradient(45deg, #ffffff11 , #ffffff02);
+    transform: skewY(-225deg);
+}
+
+.strip-4{
+    top: -100px;
+    right: 20%;
+}
+
+.strip-5{
+    position: absolute;
+    width: 200px;
+    height:200px;
+    background-color: #f8f8fb;
+    left:0;
+    top: 100px;
+    background-image: linear-gradient(-45deg, #fff 0%, #fff 50%, #f8f8fb 50%, #f8f8fb 100%);
+}
+
+.strip-6{
+    position: absolute;
+    width:100px;
+    height:300px;
+    right:0;
+    top: 100px;
+    transform: skewY(45deg);
+    background-color: #f8f8fb;
+}
+
+.strip-7{
+    position: absolute;
+    width:200px;
+    height:200px;
+    left: 65%;
+    bottom: -150px;
+    transform: skewY(45deg);
+    background-color: #f8f8fb;
+}
+
+.strip-red{
+    margin: 50px auto;
+    width: 100px;
+    height: 3px;
+    background-image: linear-gradient(to right, #ff253aff, #ff253a00);
+}
+
+
+
+.strip-blue{
+    position: absolute;
+    left:0;
+    right:0;
+    height: 200px;
+    bottom: -8px;
+    background-color: #725cd0;
+    transform: skewY(-30deg);
+    box-shadow: -20px 20px 0 #f8f8fb;
+    z-index: -1;
+}
+
+/* Brands section */
+.section-companies{
+    background-color: #eee;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.section-companies ul{
+    display: flex;
+    justify-content: center;
+}
+
+.section-companies li{
+    margin-left: 5%;
+}
+
+.mobile-keypad-container{
+    display: inline-block;
+    border-radius: 15px;
+    perspective: 800px;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+
+.mobile-screen{
+    display: block;
+    transform: rotateX(-30deg);
+    border-radius: 20px;
+    box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.2)
+}
+
+.mobile-keypad{
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 50px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Features section */
+.section-features{
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-features h4{
+    color: #6951ce;
+}
+
+.features-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.features{
+    width: 25%;
+    color: #9591a6;
+}
+ul.features li{
+    margin: 30px 0;
+}
+ul.features li > span{
+    float: right;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #fff7f9;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+    color: #ff5e91;
+}
+ul.features.txt-left li > span{
+    float: left;
+}
+ul.features.txt-left li > div{
+    padding-left: 65px;
+    padding-top: 5px;
+}
+
+ul.features.txt-right li > div{
+    padding-right: 65px;
+    padding-top: 5px;
+}
+ul.features li h4{
+    margin:0;
+}
+.txt-left{
+    text-align: left;
+}
+.txt-right{
+    text-align: right;
+}
+.mobile-container{
+    width: 25%;
+    perspective: 1000px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.mobile{
+    transform: rotateY(72deg);
+    box-shadow: -20px 60px 70px rgba(0,0,0,0.1);
+}
+
+.pull-right{
+    position: absolute;
+    right:0;
+}
+.btn-login{
+    right: 150px;
 }
