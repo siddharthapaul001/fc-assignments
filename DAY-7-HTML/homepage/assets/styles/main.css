@@ -32,7 +32,7 @@ header{
 
 .img-logo{
     position: absolute;
-    left: 5%;
+    left: 0;
     top: 10px;
     width: 80px;
     height: 80px;
@@ -47,7 +47,13 @@ nav ul{
 nav a{
     color: #fff;
     text-align: center;
-    padding: 10px 15px;
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    border-radius: 60px;
+}
+
+nav a:hover, nav a.active{
+    background-image: linear-gradient(to right, #ffffff44 , #ffffff02);
 }
 
 nav li{
@@ -66,7 +72,7 @@ nav li{
     flex-direction: column;
     position: relative;
     text-align: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .btn{
@@ -78,6 +84,14 @@ nav li{
     border: 1px solid #ff5e91;
     border-radius: 25px;
     color: #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.btn-demo:hover, .btn-demo:focus{
+    background-color: #d34e78;
+    border: 1px solid #d34e78;
+    outline: none;
 }
 
 /* Strips */
@@ -98,8 +112,8 @@ nav li{
 }
 
 .strip-1{
-    top: 5%;
-    left: 5%;
+    top: 5px;
+    left: 8%;
     border-top-left-radius: 10px;
 }
 
@@ -149,6 +163,16 @@ nav li{
     background-color: #f8f8fb;
 }
 
+.strip-8{
+    position: absolute;
+    width:800px;
+    height:800px;
+    left:21%;
+    bottom: 0;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(45deg, #ffffff33 0%, #ffffff00 50%, #ffffff00 50%, #ffffff00 100%);
+}
+
 .strip-red{
     margin: 50px auto;
     width: 100px;
@@ -191,7 +215,7 @@ nav li{
     border-radius: 15px;
     perspective: 800px;
     margin-top: -200px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .mobile-screen{
@@ -273,6 +297,8 @@ ul.features li h4{
 }
 
 .mobile{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     transform: rotateY(72deg);
     box-shadow: -20px 60px 70px rgba(0,0,0,0.1);
 }
