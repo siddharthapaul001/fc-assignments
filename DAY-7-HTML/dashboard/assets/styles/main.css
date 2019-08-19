@@ -1,7 +1,7 @@
 html, body{
     margin:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to bottom, #37667c, #37667c);
+    background-image: linear-gradient(45deg, #1f445b, #5c727c);
 }
 
 
@@ -69,7 +69,7 @@ input:hover, input:focus{
 .container{
     display: flex;
     justify-content: space-evenly;
-    margin: 100px 5% 0 5%;
+    margin: 100px 5%;
 }
 
 .menu-container{
