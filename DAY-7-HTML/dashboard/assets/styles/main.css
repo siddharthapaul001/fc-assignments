@@ -73,7 +73,7 @@ input:hover, input:focus{
 }
 
 .menu-container{
-    min-width: 200px;
+    min-width: 225px;
     background-color: #2d3747;
     border-right: 1px solid #656e7b;
     flex-grow: 1;
@@ -672,5 +672,47 @@ li .value *{
 .linkedin{
     background-color: #027ebb;
     color: #fff;
+}
+
+input[type='checkbox'] {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     height: 16px;
+     width: 16px;
+     position:relative;
+     border-radius: 3px;
+     display: inline-block;
+     vertical-align: middle;
+ }
+ input[type='checkbox']:before {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     height: 16px;
+     width: 16px;
+     border-radius: 2px;
+ }
+ input[type='checkbox']:checked:before{
+   color: #000;
+   content: '\2713';
+   position:absolute;
+   display: block;
+   text-align:center;
+ }
+
+.checkbox-yellow{
+    background-color: #ffd507;
+}
+.checkbox-skyblue{
+    background-color: #2aafff;
+}
+.checkbox-pink{
+    background-color: #e81860;
+}
+.checkbox-green{
+    background-color: #00aa8a;
+}
+
+.checkbox-gray{
+    background-color: #777;
 }
 /* End of color component */
