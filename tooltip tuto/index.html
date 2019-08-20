@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                max-height: 100px;
+                overflow: hidden;
+                margin-top: 50px;
+            }
+            .tooltip-container{
+                position: relative;
+            }
+            .tooltip{
+                position: absolute;
+                top: -20px;
+                right:0;
+                display: none;
+            }
+            .tooltip-container:hover .tooltip, .btn:hover + .tooltip{
+                display: block;
+            }
+            .btn{
+                float: right;
+            }
+            .clearfix:after {
+                visibility: hidden;
+                display: block;
+                font-size: 0;
+                content: " ";
+                clear: both;
+                height: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tooltip-container">
+            <div class="container clearfix">
+                <button class="btn">Click</button>
+                <div class="tooltip">
+                    Lorem ipsum dolor.
+                </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit explicabo voluptatem obcaecati ipsam doloremque minus et numquam! Sint id consequuntur laborum vitae modi et aut incidunt suscipit, molestias repudiandae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, sunt cum. Amet magnam aut ab quasi sit est tenetur eos odio doloribus dicta similique aliquam perspiciatis illum, odit alias neque.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, excepturi voluptates! Excepturi laborum maiores aliquam, distinctio atque delectus iusto aperiam nobis pariatur ipsa. Quae tenetur illo sunt? Praesentium, necessitatibus nihil.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nisi, explicabo veritatis incidunt ab aperiam dolores labore odio unde? Fugit vero reiciendis impedit eligendi recusandae iure nemo iste officiis porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laudantium distinctio, saepe possimus eligendi repellendus iste cum cupiditate exercitationem, aut repellat sed tempore minima quae officia consequuntur nam unde non.
+            </div>
+        </div>
+    </body>
+</html>

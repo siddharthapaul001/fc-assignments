@@ -218,6 +218,7 @@ nav li.searchbox input{
     position: absolute;
     top: -7px;
     left: 0;
+    color: #777;
 }
 
 /* End of heading */

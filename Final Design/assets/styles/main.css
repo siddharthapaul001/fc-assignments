@@ -1,0 +1,25 @@
+html,body{
+    margin:0;
+}
+/* Color asset */
+.seagreen{
+    background-color: #00c8c8;
+}
+.dark{
+    background-color: #333333;
+}
+.txt-seagreen{
+    color: #03cbc8;
+}
+
+.small-menu-text{
+    color: #747474;
+}
+
+.quicklinks-heading{
+    color:#585254;
+}
+
+.txt-quicklink{
+    color:#7d7d7d;
+}
