@@ -1,6 +1,167 @@
+/* Common styling */
+
 html,body{
     margin:0;
+    font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:hover, input:focus, select:hover, select:focus, button:hover, button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* End of common styling */
+
+/* Header */
+nav.top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.currency-box{
+    padding: 10px 0 0 10px;
+}
+
+nav.top select{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #94858a;
+}
+
+nav ul{
+    display: block;
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    padding:15px 10px;
+}
+
+li.active a, nav.top a:hover{
+    background-color: #00c8c8;
+    color: #fff;
+}
+
+li.cart{
+    float: right;
+    margin-left: 30px;
+}
+
+.primary-menu-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    flex-direction: column;
+}
+
+.company-title{
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+}
+
+.primary-navigation ul{
+    display: none;
+}
+
+.primary-menu-container li{
+    display: block;
+    position: relative;
+}
+
+.primary-menu-container li .submenu{
+    display: none;
+    position: absolute;
+}
+.primary-navigation:hover ul{
+    display: block;
+}
+
+.primary-menu-container li:hover .submenu{
+    display: block;
+}
+
+.mobile-menu{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top: 10px;
+    right:10px;
+    width: 20px;
+    height: 40px;
+}
+
+.searchbox{
+    display: block;
+}
+
+.searchbox-wraper{
+    margin-right: 20px;
+}
+.searchbox span{
+    float: right;
+    width: 20px;
+}
+@media (min-width: 768px){
+    nav ul{
+        display: inline-block;
+        width: auto;
+    }
+    .currency-box{
+        padding: 0;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .primary-menu-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .primary-menu-container li{
+        display: inline-block;
+    }
+    .primary-navigation{
+        display: inline-block;
+    }
+    .primary-navigation ul{
+        display: inline-block;
+    }
+    .searchbox{
+        width: auto;
+        display: inline-block;
+    }
+
+}
+
+/* End of Header */
+
+/* Spaceing components */
+
+@media (min-width: 768px){
+    .side-padding{
+        padding: 0 10%;
+    }
+}
+/* ENd of spacing components */
+
 /* Color asset */
 .seagreen{
     background-color: #00c8c8;
@@ -16,10 +177,21 @@ html,body{
     color: #747474;
 }
 
-.quicklinks-heading{
-    color:#585254;
+.txt-dark, .txt-dark a{
+    color:#94858a;
 }
 
 .txt-quicklink{
     color:#7d7d7d;
 }
+/* End of color asset */
+
+/* Clearfix */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
