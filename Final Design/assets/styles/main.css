@@ -7,6 +7,8 @@ html,body{
 
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -19,6 +21,26 @@ input:hover, input:focus, select:hover, select:focus, button:hover, button:focus
 }
 
 /* End of common styling */
+
+/* Buttons */
+
+.btn{
+    color: #747474;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-bordered{
+    background: transparent;
+    border: 2px solid #747474;
+}
+.btn-bordered:hover{
+    background-color: #00c8c8;
+    border-color: #00c8c8;
+    color: #fff;
+    transition: all 600ms ease;
+}
+/* End of buttons */
 
 /* Header */
 nav.top{
@@ -42,6 +64,9 @@ nav ul{
     display: block;
     margin:0;
     padding:0;
+}
+
+nav.top ul{
     width: 100%;
 }
 
@@ -52,6 +77,11 @@ nav li{
 nav a{
     display: block;
     padding:15px 10px;
+    font-size: small;
+}
+
+nav a:hover{
+    color: #03cbc8;
 }
 
 li.active a, nav.top a:hover{
@@ -66,16 +96,16 @@ li.cart{
 
 .primary-menu-container{
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: absolute;
     flex-direction: column;
+    width: 100%;
+    position: relative;
 }
 
 .company-title{
     font-size: 20px;
-    padding: 10px 0 0 10px;
+    padding: 10px 0 10px 10px;
 }
 
 .primary-navigation ul{
@@ -86,10 +116,42 @@ li.cart{
     display: block;
     position: relative;
 }
-
-.primary-menu-container li .submenu{
+.primary-menu-container a{
+    font-weight: 700;
+}
+.primary-menu-container a > span{
+    display: block;
+}
+.submenu{
     display: none;
-    position: absolute;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.submenu li a{
+    text-transform: capitalize;
+    font-size: small;
+    font-weight: 400;
+    padding: 7px 0 7px 9px;
+}
+.submenu h2{
+    padding-left: 10px;
+    font-size: medium;
+    text-transform: uppercase;
+}
+.submenu ul{
+    margin-bottom:30px;
+}
+.submenu-offer{
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 25px 0;
+    text-align: center;
+}
+.submenu-offer strong{
+    display: block;
 }
 .primary-navigation:hover ul{
     display: block;
@@ -97,6 +159,11 @@ li.cart{
 
 .primary-menu-container li:hover .submenu{
     display: block;
+}
+
+.primary-menu-container a{
+    color: #333;
+    text-transform: uppercase;
 }
 
 .mobile-menu{
@@ -110,20 +177,31 @@ li.cart{
 }
 
 .searchbox{
-    display: block;
+    padding: 3px;
+    border: 1px solid #333;
+    font-size: small;
+    background-color: #fff;
 }
 
-.searchbox-wraper{
-    margin-right: 20px;
+.search-wraper{
+    display: inline-block;
+    vertical-align: middle;
+}
+.searchbox input{
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: small;
 }
 .searchbox span{
+    width:20px;
     float: right;
-    width: 20px;
 }
 @media (min-width: 768px){
     nav ul{
         display: inline-block;
-        width: auto;
+    }
+    nav.top ul{
+        width:auto;
     }
     .currency-box{
         padding: 0;
@@ -132,32 +210,190 @@ li.cart{
         display: none;
     }
     .primary-menu-container{
+        width:90%;
+        padding:15px 5%;
         flex-direction: row;
-        align-items: center;
+        position: absolute;
+    }
+    .primary-menu-container.bg{
+        background-color: #f8f8f8;
     }
     .primary-menu-container li{
         display: inline-block;
+        vertical-align: top;
+    }
+
+    .primary-menu-container li .submenu{
+        position: absolute;
+        z-index: 10;
     }
     .primary-navigation{
         display: inline-block;
+        vertical-align: middle;
     }
     .primary-navigation ul{
         display: inline-block;
     }
-    .searchbox{
-        width: auto;
+
+    .submenu{
+        width: 360px;
+        padding: 20px;
+        box-shadow: 0 10px 10px rgba(0,0,0, 0.3);
+    }
+
+    .submenu-wraper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .submenu ul{
         display: inline-block;
+        width: 45%;
+    }
+    .submenu li{
+        display: block;
+    }
+
+    .searchbox{
+        width: 180px;
+        margin-left: 40px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .search-wraper{
+        width: 155px;
     }
 
 }
 
 /* End of Header */
 
+/* Section Banner */
+.section-banner{
+    background-image: url('../images/photo.png');
+    background-size: cover;
+    background-position: top center;
+    text-align: right;
+}
+.txt-large-container{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.txt-large{
+    display: inline-block;
+    font-size: 128px;
+    font-weight: 700;
+    color: #575153;
+}
+
+.shop-btn-container{
+    position: relative;
+}
+
+.btn-shop{
+    position: absolute;
+    right: 1%;
+    bottom: 5px;
+    padding: 10px;
+}
+@media (min-width: 768px){
+    .txt-large-container{
+        min-height: 600px;
+    }
+    .txt-large{
+        font-size: 278px;
+    }
+    .btn-shop{
+        right: 18%;
+        bottom:100px;
+        padding: 12px 15px;
+    }
+}
+/* End of section banner */
+
+/* Section products */
+
+.categories-container{
+    overflow: auto;
+}
+ul.categories{
+    display: flex;
+    margin:0;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+.categories li{
+    display: inline-block;
+    flex-shrink: 0;
+}
+.categories a{
+    color: #6f6f6f;
+    text-transform: uppercase;
+    font-size: small;
+    display: block;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+.categories li.active a, .categories li a:hover{
+    color: #00c8c8;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products .item{
+    display: block;
+    margin: 10px 0;
+    position: relative;
+}
+
+.img-product{
+    width: 100%;
+}
+
+.products .col-half, .products .col{
+    width: auto;
+}
+
+@media (min-width: 768px){
+    .section-products{
+        padding: 20px 5%;
+    }
+    .products{
+        flex-direction: row;
+    }
+    .products .item{
+        display: inline-block;
+    }
+
+    .products .col-half, .products .col{
+        width: 49%;
+    }
+    .products .col{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .products .col-full{
+        width: 100%;
+    }
+}
+/* End of section products */
+
 /* Spaceing components */
 
 @media (min-width: 768px){
     .side-padding{
         padding: 0 10%;
+    }
+    .side-margin-half{
+        margin: 0 5%;
     }
 }
 /* ENd of spacing components */
