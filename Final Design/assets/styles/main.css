@@ -143,7 +143,7 @@ li.cart{
 .submenu ul{
     margin-bottom:30px;
 }
-.submenu-offer{
+.offer{
     background-color: #333;
     color: #fff;
     text-transform: uppercase;
@@ -151,7 +151,7 @@ li.cart{
     padding: 25px 0;
     text-align: center;
 }
-.submenu-offer strong{
+.offer strong{
     display: block;
 }
 .primary-navigation:hover ul{
@@ -316,20 +316,22 @@ li.cart{
 
 /* Section products */
 
-.categories-container{
+.tabs-container{
     overflow: auto;
 }
-ul.categories{
+ul.tabs{
     display: flex;
     margin:0;
-    padding: 20px 0;
     border-top: 1px solid #ddd;
 }
-.categories li{
+ul.tabs.extrapadding{
+    padding: 20px 0;
+}
+.tabs li{
     display: inline-block;
     flex-shrink: 0;
 }
-.categories a{
+.tabs a{
     color: #6f6f6f;
     text-transform: uppercase;
     font-size: small;
@@ -337,7 +339,7 @@ ul.categories{
     padding: 10px 15px;
     font-weight: 700;
 }
-.categories li.active a, .categories li a:hover{
+.tabs li.active a, .tabs li a:hover{
     color: #00c8c8;
 }
 
@@ -358,7 +360,7 @@ ul.categories{
     width: 100%;
 }
 
-.products .col-half, .products .col{
+.col-half, .col{
     width: auto;
 }
 
@@ -373,25 +375,26 @@ ul.categories{
         display: inline-block;
     }
 
-    .products .col-half, .products .col{
+    .col-half, .col{
         width: 49%;
     }
-    .products .col{
+    .col{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .products .col-full{
+    .col-full{
         width: 100%;
     }
 }
 /* End of section products */
 
-/* Section qucklinks */
-.section-lookbook{
+/* Section lookbook */
+.flex-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .lookbook{
     width: 100%;
@@ -415,7 +418,6 @@ ul.categories{
     font-size: xx-large;
 }
 .lookbook-txt p{
-    font-size: small;
     color: #333;
 }
 .lookbook strong{
@@ -425,7 +427,7 @@ ul.categories{
     margin-top: 20px;
 }
 @media (min-width: 768px){
-    .section-lookbook{
+    .flex-container{
         flex-direction: row;
     }
     .lookbook{
@@ -446,13 +448,39 @@ ul.categories{
     }
 }
 
+/* End of lookbook */
+
+/* Section quicklinks */
+
+ul.quicklinks{
+    width: auto;
+}
+
+@media (min-width: 576px){
+    ul.quicklinks{
+        width: 49%;
+    }
+}
+
+@media (min-width: 768px){
+    ul.quicklinks{
+        width: 24%;
+    }
+}
+
 /* End of quicklinks */
 
+/* footer */
+    footer{
+        padding: 15px 0;
+    }
+/* End of footer */
 /* Spaceing components */
 
 @media (min-width: 768px){
     .side-padding{
-        padding: 0 10%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .side-margin-half{
         margin: 0 5%;
