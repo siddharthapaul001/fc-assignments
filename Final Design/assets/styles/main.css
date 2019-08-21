@@ -29,6 +29,7 @@ input:hover, input:focus, select:hover, select:focus, button:hover, button:focus
     padding: 12px 25px;
     text-transform: uppercase;
     cursor: pointer;
+    display: inline-block;
 }
 .btn-bordered{
     background: transparent;
@@ -385,6 +386,67 @@ ul.categories{
     }
 }
 /* End of section products */
+
+/* Section qucklinks */
+.section-lookbook{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lookbook{
+    width: 100%;
+    position: relative;
+}
+.lookbook img{
+    width: 100%;
+}
+.lookbook-txt{
+    position: absolute;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.lookbook h2{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: xx-large;
+}
+.lookbook-txt p{
+    font-size: small;
+    color: #333;
+}
+.lookbook strong{
+    display: block;
+}
+.btn-view{
+    margin-top: 20px;
+}
+@media (min-width: 768px){
+    .section-lookbook{
+        flex-direction: row;
+    }
+    .lookbook{
+        width: 49%;
+    }
+    .lookbook-txt{
+        left:40%;
+        right: 0;
+        top:10%;
+        padding-right: 25px;
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 1024px){
+    .lookbook{
+        width: 32%;
+    }
+}
+
+/* End of quicklinks */
 
 /* Spaceing components */
 
