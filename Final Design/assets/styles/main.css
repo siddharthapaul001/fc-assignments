@@ -424,7 +424,7 @@ ul.tabs.extrapadding{
     display: block;
 }
 .btn-view{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 @media (min-width: 768px){
     .flex-container{
@@ -436,7 +436,7 @@ ul.tabs.extrapadding{
     .lookbook-txt{
         left:40%;
         right: 0;
-        top:10%;
+        top:0;
         padding-right: 25px;
         background-color: transparent;
     }
@@ -451,9 +451,38 @@ ul.tabs.extrapadding{
 /* End of lookbook */
 
 /* Section quicklinks */
-
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-quicklinks{
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}
+.section-quicklinks a{
+    color: #fff;
+    display: inline-block;
+    padding: 0 25px;
+}
+.section-quicklinks a:hover{
+    color: #333;
+    transition: all 300ms ease;
+}
 ul.quicklinks{
     width: auto;
+    margin: 20px 0;
+}
+.quicklinks h2{
+    color: #797576;
+    text-transform: uppercase;
+    font-size: small;
+}
+.quicklinks a{
+    color:#959595;
+    display: block;
+    padding: 7px 0;
+    font-size: small;
 }
 
 @media (min-width: 576px){
