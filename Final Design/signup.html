@@ -21,8 +21,8 @@
                 </select>
             </div>
             <ul>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#signin">Sign In</a></li>
                 <li class="active cart">
                     <a href="#"><span class="fa fa-shopping-cart"></span> empty <span class="fa fa-angle-down"></span></a>
                     <div class="submenu cart">
@@ -91,8 +91,8 @@
             <strong>SIGN IN OR REGISTER</strong>
         </div>
     </section>
-    <section class="section-forms flex-container side-padding add-spaceing">
-        <div class="col-half right-bordered">
+    <section class="section-forms flex-container side-padding add-spaceing bottom-margin">
+        <div id="signin" class="col-half right-bordered">
             <h2>SIGN IN</h2>
             <form name="signin" method="post" action="">
                 <input name="email" type="email" id="email" placeholder="Your email.." />
@@ -103,7 +103,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-half">
+        <div id="register" class="col-half">
             <h2>REGISTER</h2>
             <form name="signin" method="post" action="">
                 <input name="email" type="email" id="reg-email" placeholder="Your email.." />
@@ -124,11 +124,11 @@
         </div>
     </section>
 
-    <section class="section-quicklinks flex-container side-padding">
+    <section class="section-quicklinks gray flex-container side-padding">
         <ul class="quicklinks">
             <h2>Information</h2>
             <li><a href="#">The brand</a></li>
-            <li><a href="#">Local stores</a></li>
+            <li><a href="contact.html">Local stores</a></li>
             <li><a href="#">Customer service</a></li>
             <li><a href="#">Privacy &amp; cookies</a></li>
             <li><a href="#">Sitemap</a></li>

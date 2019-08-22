@@ -30,6 +30,14 @@ h2, h3{
     text-transform: uppercase;
 }
 
+img{
+    width: 100%;
+}
+
+p{
+    color: #777;
+}
+
 form input[type="text"],form input[type="password"],form input[type="email"]{
     width: 100%;
     padding: 10px;
@@ -507,12 +515,16 @@ ul.tabs.extrapadding{
     width: auto;
 }
 
+
 @media (min-width: 576px) {
     .col-half{
         width: 49%;
     }
     .products .item{
         display: inline-block;
+    }
+    .col-3{
+        width: 32%;
     }
 }
 
@@ -552,8 +564,12 @@ ul.tabs.extrapadding{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.lookbook{
+.col-3{
     width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.lookbook{
     position: relative;
 }
 .lookbook img{
@@ -595,7 +611,7 @@ ul.tabs.extrapadding{
     .lookbook h2{
         margin-top: 15px;
     }
-    .lookbook{
+    .col-3{
         width: 49%;
     }
     .lookbook-txt{
@@ -612,10 +628,7 @@ ul.tabs.extrapadding{
 }
 
 @media (min-width: 1224px){
-    .lookbook{
-        width: 32%;
-    }
-    .lookbook:last-child{
+    .col-3{
         width: 32%;
     }
 }
@@ -643,6 +656,49 @@ ul.tabs.extrapadding{
     }
 /* Section signup*/
 
+/* Section map */
+.section-map{
+    color: #777;
+}
+.map-img{
+    width: 100%;
+}
+
+.contact-details{
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contact-info li{
+    padding: 10px 0;
+}
+
+.contact-info li span{
+    float: left;
+    width: 15px;
+}
+
+.contact-info li a, .contact-info li address, .contact-info li div{
+    display: block;
+    padding-left: 25px;
+    font-size: medium;
+    font-weight: 400;
+    color: #777;
+}
+
+@media (min-width: 1024px){
+    .map-img{
+        width: 65%;
+    }
+    .map-img img{
+        max-height: 450px;
+    }
+    .contact-details{
+        width: 35%;
+    }
+}
+/* End of section map */
+
 /* Section quicklinks */
 .flex-center{
     display: flex;
@@ -652,7 +708,7 @@ ul.tabs.extrapadding{
 .flex-column{
     flex-direction: column;
 }
-.section-quicklinks{
+.gray{
     background-color: #f8f8f8;
 }
 .section-quicklinks .col-half a{
@@ -676,6 +732,7 @@ address{
     font-style: normal;
     font-size: small;
     color: #959595;
+    font-weight: 700;
 }
 .quicklinks a, .address a{
     color:#959595;
@@ -743,6 +800,9 @@ footer span{
     }
     .side-margin-half{
         margin: 0 5%;
+    }
+    .bottom-margin{
+        margin-bottom: 30px;
     }
     .add-spaceing{
         padding-top: 20px;
