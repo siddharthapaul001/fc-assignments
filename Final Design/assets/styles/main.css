@@ -74,10 +74,38 @@ input:hover, input:focus, select:hover, select:focus, button:hover, button:focus
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
+    margin: 10px 5px 10px 0;
 }
 .btn-bordered{
     background: transparent;
     border: 2px solid #747474;
+}
+.btn-transparent{
+    background: transparent;
+    border: 2px solid transparent;
+    color: #747474;
+    font-size: medium;
+    padding-left: 0;
+}
+.btn-transparent span{
+    color: #fff;
+    background-color: #747474;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+.btn-bordered span:first-child{
+    margin-right: 10px;
+}
+.btn-transparent:hover{
+    color: #00c8c8;
+    transition: all 600ms ease;
+}
+.btn-transparent:hover span:first-child{
+    background-color: #00c8c8;
+    transition: all 600ms ease;
 }
 .btn-small-circle{
     background-color: #333;
@@ -99,6 +127,10 @@ input:hover, input:focus, select:hover, select:focus, button:hover, button:focus
     border-color: #00c8c8;
     color: #fff;
     transition: all 600ms ease;
+}
+.btn-dark:hover{
+    background-color: #333;
+    border-color: #333;
 }
 /* End of buttons */
 
@@ -255,6 +287,7 @@ li.cart{
 .searchbox span{
     width:20px;
     float: right;
+    padding: 3px 0;
 }
 @media (min-width: 1024px){
     nav ul{
@@ -350,7 +383,7 @@ li.cart{
 .section-banner.city{
     position: relative;
     background-image: url("../images/bannercity.png");
-    height: 300px;
+    min-height: 300px;
     z-index: 5;
 }
 .transparent-wraper{
@@ -361,6 +394,8 @@ li.cart{
     right:0;
     background-color: rgba(50,50,50, 0.5);
     color: #fff;
+    text-transform: uppercase;
+    text-align: center;
 }
 .transparent-wraper h1{
     font-size: xx-large;
@@ -391,6 +426,9 @@ li.cart{
     padding: 10px;
 }
 @media (min-width: 768px){
+    .section-banner.city{
+        min-height: 450px;
+    }
     .txt-large-container{
         min-height: 600px;
     }
@@ -415,6 +453,13 @@ ul.tabs{
     margin:0;
     border-top: 1px solid #ddd;
 }
+ul.tabs-dark{
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+}
+ul.tabs-dark li{
+    background-color: #f8f8f8;
+}
 ul.tabs.extrapadding{
     padding: 20px 0;
 }
@@ -430,10 +475,21 @@ ul.tabs.extrapadding{
     padding: 10px 15px;
     font-weight: 700;
 }
+.tabs-dark a{
+    padding:  15px 20px;
+}
 .tabs li.active a, .tabs li a:hover{
     color: #00c8c8;
 }
-
+.tabs-dark li.active a{
+    background-color: #333;
+    color: #fff;
+}
+.tabs-dark li a:hover{
+    background-color: #777;
+    color: #fff;
+    transition: all 600ms ease;
+}
 .products{
     display: flex;
     flex-direction: column;
@@ -460,6 +516,10 @@ ul.tabs.extrapadding{
     top:7px;
     left:7px;
     color: #777;
+}
+.price-tag .ico-pound{
+    font-size: xx-small;
+    vertical-align: top;
 }
 .item-wraper .ico-center{
     position: relative;
@@ -513,6 +573,11 @@ ul.tabs.extrapadding{
 
 .col-half, .col{
     width: auto;
+}
+
+.col-half{
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -571,13 +636,14 @@ ul.tabs.extrapadding{
 }
 .lookbook{
     position: relative;
+    margin: 10px 0;
 }
 .lookbook img{
     width: 100%;
 }
 .lookbook-txt{
     position: absolute;
-    text-align: right;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     bottom:0;
     top:0;
@@ -585,10 +651,11 @@ ul.tabs.extrapadding{
     left:0;
     right:0;
     padding-right: 10px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .lookbook h2{
     font-weight: 300;
@@ -605,11 +672,15 @@ ul.tabs.extrapadding{
     max-width: 140px;
 }
 @media (min-width: 768px){
+    .lookbook{
+        margin:0;
+    }
     .flex-container{
         flex-direction: row;
     }
     .lookbook h2{
         margin-top: 15px;
+        font-size: x-large;
     }
     .col-3{
         width: 49%;
@@ -617,9 +688,11 @@ ul.tabs.extrapadding{
     .lookbook-txt{
         left:40%;
         right: 0;
-        bottom:20px;
+        bottom:10px;
         padding-right: 25px;
         background-color: transparent;
+        text-align: right;
+        align-items: flex-end;
     }
 
     .btn-view{
@@ -630,6 +703,11 @@ ul.tabs.extrapadding{
 @media (min-width: 1224px){
     .col-3{
         width: 32%;
+    }
+}
+@media (min-width: 1440px){
+    .lookbook h2{
+        font-size: xx-large;
     }
 }
 
@@ -699,7 +777,146 @@ ul.tabs.extrapadding{
 }
 /* End of section map */
 
+/* Section forms */
+    .section-forms h2{
+        padding: 0 10px;
+    }
+    .section-forms form{
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    @media (min-width: 576px){
+        .section-forms form{
+            padding: 0;
+        }
+        .section-forms h2{
+            padding: 0;
+        }
+    }
+/* End of section forms */
+
+/* Section productview */
+.section-product-view{
+    justify-content: center;
+    color: #777;
+    align-items: flex-start;
+    font-size: small;
+    align-items: center;
+}
+.product-view-info{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.item-features{
+    list-style-type: disc;
+    padding-left: 15px;
+}
+.product-view-info li{
+    padding: 5px 0;
+}
+.product-view-info h2, .product-view-info strong{
+    color: #333;
+}
+
+.product-view-info h2{
+    font-size: medium;
+}
+.customize-item-form{
+    margin: 10px 0;
+}
+.customize-item-form > div{
+    display: inline-block;
+}
+.customize-item-form label{
+    display: block;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.customize-item-form select, .customize-item-form input{
+    background-color: transparent;
+    border: 2px solid #777;
+    padding: 7px 10px;
+    font-size: medium;
+    color: #777;
+}
+.customize-item-form input{
+    max-width: 50px;
+}
+.product-description{
+    color: #777;
+    box-sizing: border-box;
+    padding: 15px 10px;
+}
+.product-price{
+    font-size: xx-large;
+}
+.product-price > span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.product-price .ico-pound{
+    font-size: medium;
+    vertical-align: top;
+    margin-top: 5px;
+}
+.reviews{
+    padding-bottom: 10px;
+}
+.reviews > div{
+    font-weight: 700;
+    display: block;
+    padding-bottom: 10px;
+}
+.share a{
+    color: #777;
+    padding: 0 5px;
+    font-size: medium;
+}
+.share a:hover{
+    color: #00c8c8;
+    transition: all 600ms ease;
+}
+.stars .filled{
+    color: yellow;
+}
+@media (min-width: 768px){
+    .section-product-view{
+        align-items: flex-start;
+    }
+    .product-pic-container{
+        width: 40%;
+    }
+    .product-view-info{
+        width: 60%;
+        padding: 0 20px 20px 20px;
+    }
+    .item-features{
+        padding-left: 25px;
+    }
+    .reviews > div{
+        display: inline-block;
+        padding-bottom: 0;
+    }
+
+    .stars{
+        padding-right: 15px;
+    }
+    .add-review{
+        padding: 0 15px;
+        border-right: 1px solid #777;
+        border-left: 1px solid #777;
+    }
+    .share{
+        padding-left: 15px;
+    }
+}
+/* End of productview */
+
 /* Section quicklinks */
+.section-quicklinks{
+    flex-direction: row;
+}
 .flex-center{
     display: flex;
     justify-content: center;
@@ -740,6 +957,10 @@ address{
     padding: 7px 0;
     font-size: small;
 }
+.quicklinks .offer{
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
 
 @media (min-width: 576px){
     .section-quicklinks{
@@ -773,8 +994,8 @@ address{
 
 /* footer */
 footer{
-    padding: 15px 0;
     font-size: small;
+    box-sizing: border-box;
 }
 footer div{
     width: 100%;
@@ -783,8 +1004,9 @@ footer div{
 }
 footer span{
     display: inline-block;
-    padding: 0 5px;
+    padding: 7px 5px;
 }
+
 @media (min-width: 576px) {
     footer div{
         width: auto;
@@ -792,11 +1014,14 @@ footer span{
 }
 /* End of footer */
 /* Spaceing components */
+.bottom-margin{
+    margin-bottom: 20px;
+}
 
 @media (min-width: 768px){
     .side-padding{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .side-margin-half{
         margin: 0 5%;
@@ -807,6 +1032,12 @@ footer span{
     .add-spaceing{
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+}
+@media (min-width: 1280px){
+    .side-padding{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 /* ENd of spacing components */
@@ -820,6 +1051,10 @@ footer span{
 }
 .txt-seagreen{
     color: #03cbc8;
+}
+
+.txt-bold{
+    font-weight: 700;
 }
 
 .small-menu-text{
