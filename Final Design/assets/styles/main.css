@@ -264,8 +264,9 @@ li.cart{
     cursor: pointer;
     top: 10px;
     right:10px;
-    width: 20px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: right;
 }
 
 .searchbox{
@@ -939,7 +940,7 @@ ul.tabs.extrapadding{
 }
 .quicklinks, .address{
     width: auto;
-    margin: 20px 10px;
+    margin: 10px;
 }
 .quicklinks h2, .address h2{
     color: #797576;
@@ -957,7 +958,7 @@ address{
     padding: 7px 0;
     font-size: small;
 }
-.quicklinks .offer{
+.section-quicklinks .offer{
     box-sizing: border-box;
     padding: 20px 10px;
 }
@@ -969,9 +970,11 @@ address{
     }
     .quicklinks{
         width: 45%;
+        margin: 20px 10px;
     }
     .address{
         width: 100%;
+        margin: 20px 10px;
     }
     .section-quicklinks .col-half a{
         padding: 0 10px;
