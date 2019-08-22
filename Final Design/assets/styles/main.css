@@ -36,6 +36,7 @@ img{
 
 p{
     color: #777;
+    line-height: 1.8;
 }
 
 form input[type="text"],form input[type="password"],form input[type="email"]{
@@ -274,6 +275,7 @@ li.cart{
     border: 1px solid #333;
     font-size: small;
     background-color: #fff;
+    margin: 5px 10px 10px 10px;
 }
 
 .search-wraper{
@@ -356,6 +358,7 @@ li.cart{
 
     .searchbox{
         width: 180px;
+        margin:0;
         margin-left: 40px;
         display: inline-block;
         vertical-align: middle;
@@ -423,7 +426,7 @@ li.cart{
 .btn-shop{
     position: absolute;
     right: 1%;
-    bottom: 5px;
+    bottom: 0;
     padding: 10px;
 }
 @media (min-width: 768px){
@@ -660,17 +663,25 @@ ul.tabs.extrapadding{
 }
 .lookbook h2{
     font-weight: 300;
-    font-size: xx-large;
+    font-size: x-large;
     margin:0;
 }
 .lookbook-txt p{
     color: #333;
+    font-size: small;
 }
 .lookbook strong{
     display: block;
 }
 .btn-view{
     max-width: 140px;
+}
+
+@media (min-width: 576px){
+    .lookbook h2{
+        padding-top: 15px;
+        font-size: xx-large;
+    }
 }
 @media (min-width: 768px){
     .lookbook{
@@ -680,7 +691,7 @@ ul.tabs.extrapadding{
         flex-direction: row;
     }
     .lookbook h2{
-        margin-top: 15px;
+        padding-top: 15px;
         font-size: x-large;
     }
     .col-3{
@@ -744,7 +755,7 @@ ul.tabs.extrapadding{
 }
 
 .contact-details{
-    padding: 0 20px;
+    padding: 0 25px;
     box-sizing: border-box;
 }
 
@@ -764,16 +775,42 @@ ul.tabs.extrapadding{
     font-weight: 400;
     color: #777;
 }
+.contact-info li.share{
+    text-align: center;
+}
+.contact-info li.share a{
+    text-align: left;
+    padding: 11px;
+    background-color: #6f6f6f;
+    display: inline-block;
+    font-size: large;
+    box-sizing: border-box;
+    color:#fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+.contact-info li.share a:first-child{
+    padding-left: 14px;
+}
+.contact-info li.share a:hover{
+    background-color: #00c8c8;
+    transition: all 600ms ease;
+}
 
-@media (min-width: 1024px){
+@media (min-width: 1280px){
     .map-img{
         width: 65%;
     }
     .map-img img{
-        max-height: 450px;
+        max-height: 500px;
     }
     .contact-details{
         width: 35%;
+    }
+    .contact-info li.share{
+        text-align: left;
     }
 }
 /* End of section map */
@@ -840,6 +877,7 @@ ul.tabs.extrapadding{
     padding: 7px 10px;
     font-size: medium;
     color: #777;
+    margin-right: 5px;
 }
 .customize-item-form input{
     max-width: 50px;
@@ -873,6 +911,7 @@ ul.tabs.extrapadding{
     color: #777;
     padding: 0 5px;
     font-size: medium;
+    display: inline-block;
 }
 .share a:hover{
     color: #00c8c8;
@@ -939,8 +978,11 @@ ul.tabs.extrapadding{
     transition: all 300ms ease;
 }
 .quicklinks, .address{
-    width: auto;
     margin: 10px;
+    width: 40%;
+}
+.address{
+    width: 100%;
 }
 .quicklinks h2, .address h2{
     color: #797576;
@@ -999,21 +1041,12 @@ address{
 footer{
     font-size: small;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
 }
 footer div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-footer span{
-    display: inline-block;
     padding: 7px 5px;
-}
-
-@media (min-width: 576px) {
-    footer div{
-        width: auto;
-    }
 }
 /* End of footer */
 /* Spaceing components */
