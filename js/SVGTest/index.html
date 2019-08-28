@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG Test</title>
+    </head>
+    <body>
+        <div id="svg-container" class="svg-container">
+            <svg id="svg" hight="100" width="100">
+
+            </svg>
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="scale">+</button>
+            <button class="btn" id="ctrl-scale">-</button>
+            <button class="btn" id="push-right">-&gt;</button>
+            <button class="btn" id="push-left">&lt;-</button>
+            <input type="color" class="inp-color" id="inp-color" />
+        </div>
+        <script>
+            var svgProps = {
+                "x": 0,
+                "y": 0,
+                "height": 20,
+                "width": 20,
+                style: {
+                    "fill": "#000",
+                    "stroke": "#000",
+                    "stroke-width": 3
+                }
+            };
+            var svg = document.getElementById("svg");
+            var rect = document.createElement("rect");
+            svg.appendChild(rect);
+            function updateSVG(){
+                rect.setAttribute("x", svgProps.x);
+                rect.setAttribute("y", svgProps.y);
+                rect.setAttribute("height", svgProps.height);
+                rect.setAttribute("width", svgProps.width);
+                rect.setAttribute("style", "fill:" + svgProps.style.fill + ";stroke:"+svgProps.style.stroke + ";");
+            }
+
+            updateSVG();
+
+            document.getElementById("scale").addEventListener("click", function(event){
+                svgProps.height *= 2;
+                svgProps.width *= 2;
+                updateSVG();
+            });
+
+            document.getElementById("inp-color").addEventListener("change", function(){
+                svgProps.style.fill = document.getElementById("inp-color").value;
+                updateSVG();
+            });
+        </script>
+    </body>
+</html>
